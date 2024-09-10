@@ -59,7 +59,7 @@ composer require ycookies/multi-widgets
                        ->shadow('shadow'); // 阴影特效 (shadow-none 阴影 ,shadow-sm 小阴影,shadow 常规阴影,shadow-lg 大阴影)
   ```
 #### CoverCard 页面组件
-![](resources/assets/img//2.png)
+![](resources/assets/img/2.png)
 
 ```php
 $cover_card = CoverCard::make()->add('标题', '子标题')
@@ -68,14 +68,14 @@ $cover_card = CoverCard::make()->add('标题', '子标题')
             ->shadow('shadow-none') // 阴影特效 (shadow-none 阴影 ,shadow-sm 小阴影,shadow 常规阴影,shadow-lg 大阴影)
 ```
 #### 列表折叠 页面组件
-![](../guide/images/multi-widgets/3.png )
+![](resources/assets/img/3.png )
 ```php
 $collapse = Collapse::make();
         $collapse->add('标题', "内容");
         $collapse->add('标题', '内容');
 ```
 #### 轮播图 页面组件
-![](resources/assets/img//4.png)
+![](resources/assets/img/4.png)
 ```php
 $carousel = Carousel::make();
 $datalist   = [
@@ -99,7 +99,7 @@ foreach ($datalist as $key => $items) {
 return $carousel->render();
 ```
 #### linkbox 页面组件
-![](resources/assets/img//5.jpeg)
+![](resources/assets/img/5.jpeg)
 ```php
 $link_group = [
             [
