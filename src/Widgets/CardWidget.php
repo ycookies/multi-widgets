@@ -34,7 +34,7 @@ class CardWidget extends Widget
     }
 
     // 阴影
-    public function serShadow($shadow = 'shadow'){
+    public function shadow($shadow = 'shadow'){
         $this->shadow = $shadow;
         return $this;
     }

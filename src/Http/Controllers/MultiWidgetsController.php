@@ -345,7 +345,7 @@ HTML;
     }
 
     public function wei_popover(){
-        $popover = Remark::make('这是一个提示','标题');
+        $popover = Remark::make('这是一个提示','标题')->placement()->icon();
         return $popover->render();
     }
 }
