@@ -173,10 +173,12 @@ $pricing_card->add('会员版', 89) // 卡标题，价格
             ->active() // 默认选中
             ->btnTxt('订购 (超优惠)'); // 按钮展示文案
 return $pricing_card->render();
-                    
 ```
+
 #### 时间轴 页面组件
+
 ![](resources/assets/img/8.png)
+
 ```php
 $datalist = [
             [
