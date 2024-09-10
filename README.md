@@ -13,6 +13,9 @@
 composer require ycookies/multi-widgets
 ```
 
+## 官方文档
+- [查看官方文档，更直接](https://jikeadmin.saishiyun.net/books/dcat-admin/#/10-%E9%A1%B5%E9%9D%A2%E7%BB%84%E4%BB%B6/13-%E6%9B%B4%E5%A4%9A%E9%A1%B5%E9%9D%A2%E7%BB%84%E4%BB%B6)
+
 ## 新增10个常用页面组件
 ```php
          return $content
