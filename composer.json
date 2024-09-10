@@ -1,0 +1,32 @@
+{
+    "name": "ycookies/multi-widgets",
+    "alias": " 多种页面组件大全",
+    "description": "超多实用页面组件大全",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension"],
+    "homepage": "https://github.com/ycookies/multi-widgets",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "杨光",
+            "email": "wx:Q3664839"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dcat\\Admin\\MultiWidgets\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Dcat\\Admin\\MultiWidgets\\MultiWidgetsServiceProvider",
+        "laravel": {
+            "providers": [
+                "Dcat\\Admin\\MultiWidgets\\MultiWidgetsServiceProvider"
+            ]
+        }
+    }
+}
