@@ -158,7 +158,7 @@ $media_list = MediaList::make()
         return $media_list->render();
 ```
 #### 订价卡 页面组件
-![](resources/assets/img/7.pn)
+![](resources/assets/img/7.png)
 ```php
 $pricing_card  = PricingCard::make()
                     ->columns(3)// 展示列数，3列
@@ -212,7 +212,7 @@ $functional->add('标题', '内容', '主图')
 ```
 
 #### Remark 页面组件
-![](../guide/images/multi-widgets/10.png)
+![](resources/assets/img/10.png)
 ```php
 $popover = Remark::make('这是一个提示','标题')
 ->placement('right') // 展示方向 默认 right  可选有(top,right,left,bottom)
