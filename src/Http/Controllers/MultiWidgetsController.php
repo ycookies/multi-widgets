@@ -16,6 +16,8 @@ use Dcat\Admin\MultiWidgets\Widgets\Collapse;
 use Dcat\Admin\MultiWidgets\Widgets\CardWidget;
 use Dcat\Admin\MultiWidgets\Widgets\Remark;
 use Dcat\Admin\Widgets\Card;
+use Dcat\Admin\MultiWidgets\Widgets\GoodsCard;
+use Dcat\Admin\MultiWidgets\Widgets\Specialities;
 use Illuminate\Routing\Controller;
 
 
@@ -40,7 +42,10 @@ CSS            );
             ->row(Card::make('订价卡 页面组件', $this->pricingCard())->withHeaderBorder())
             ->row(Card::make('时间轴 页面组件', $this->timeline())->withHeaderBorder())
             ->row(Card::make('Functional 页面组件', $this->functional())->withHeaderBorder())
-            ->row(Card::make('Remark 页面组件', $this->wei_popover())->withHeaderBorder());
+            ->row(Card::make('Remark 页面组件', $this->wei_popover())->withHeaderBorder())
+            ->row(Card::make('goods_card 页面组件', $this->goods_card())->withHeaderBorder())
+            ->row(Card::make('specialities 页面组件', $this->specialities())->withHeaderBorder());
+
         //->row($functional);
     }
 
@@ -347,5 +352,15 @@ HTML;
     public function wei_popover(){
         $popover = Remark::make('这是一个提示','标题')->placement()->icon();
         return $popover->render();
+    }
+
+    public function goods_card(){
+        $goods_card = GoodsCard::make('这是一个提示','标题');
+        return $goods_card->render();
+    }
+
+    public function specialities(){
+        $goods_card = Specialities::make('这是一个提示','标题');
+        return $goods_card->render();
     }
 }
